@@ -1,16 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image adaptative</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice Responsive - Menu Navigation</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <main>
-    <h1>Mon Avatar</h1>
-    <img src="avatar.jpg" alt="mon avatar">
-    
- </main>   
+  <header>
+    <nav>
+      <!-- Logo -->
+      <div class="navbar-brand">
+        <a href="#" class="logo">MonSite</a>
+      </div>
+
+      <!-- Checkbox caché pour gérer l'état du menu (technique CSS pure) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      
+      <!-- Bouton burger (label qui contrôle le checkbox) -->
+      <label for="menu-toggle" class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Menu de navigation -->
+      <ul>
+        <li>
+          <a href="#accueil">Accueil</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="#about">À propos</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenu de la page pour tester le scroll -->
+  <main class="main-content">
+    <section class="hero">
+      <h1>Bienvenue sur notre site</h1>
+      <p>Un exemple de navigation responsive sans JavaScript</p>
+    </section>
+
+    <section id="accueil">
+      <h2>Section Accueil</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+
+    <section id="services">
+      <h2>Section Services</h2>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </section>
+
+    <section id="portfolio">
+      <h2>Section Portfolio</h2>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </section>
+
+    <section id="about">
+      <h2>Section À propos</h2>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Section Contact</h2>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+    </section>
+  </main>
 </body>
 </html>
